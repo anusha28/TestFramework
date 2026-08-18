@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HomeDepotSuite" verbose="1">
+    <!-- 180s hard cap so a hung page load cannot run for Selenium's 300s default -->
+    <test name="GuestCheckoutSuite" time-out="180000">
+        <classes>
+            <class name="com.homedepot.tests.GuestCheckoutE2ETest"/>
+        </classes>
+    </test>
+</suite>
